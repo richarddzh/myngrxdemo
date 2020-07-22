@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as myReducer from '../my-reducer';
+import { MySelector } from '../my-selector';
+import * as myReducer from '../my-reducers';
 import * as myActions from '../my-actions';
 
 @Component({
@@ -10,6 +11,7 @@ import * as myActions from '../my-actions';
 })
 export class MyResultComponent {
   constructor(
-    private store: Store<myReducer.MyState>
+    private store: Store<myReducer.MyState>,
+    private mySelector: MySelector
   ) {}
 }

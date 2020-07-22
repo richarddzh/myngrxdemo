@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { StoreModule } from "@ngrx/store";
 import { MyButtonComponent } from './components/my-button.component';
 import { MyResultComponent } from './components/my-result.component';
-import * as myReducer from './my-reducer';
+import * as myReducer from './my-reducers';
 
 @NgModule({
   imports: [
