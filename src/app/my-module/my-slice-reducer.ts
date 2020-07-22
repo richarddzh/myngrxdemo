@@ -19,7 +19,7 @@ const myReducer = createReducer(
     return {
       ...state,
       clickCount: state.clickCount + 1,
-      queryResult: ['pending...'],
+      queryResult: ['loading query result ...'],
     };
   }),
   on(myQueryReturn, (state, {result}) => {
