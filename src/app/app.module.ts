@@ -12,7 +12,7 @@ import { MyModule } from './my-module/my-module';
   imports: [
     BrowserModule,
     MyModule,
-    StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent],

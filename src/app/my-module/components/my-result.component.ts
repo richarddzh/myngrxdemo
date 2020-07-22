@@ -12,6 +12,7 @@ import * as myActions from '../my-actions';
 })
 export class MyResultComponent implements OnInit {
   clickCount$: Observable<number>;
+  queryResult$: Observable<string>;
 
   constructor(
     private store: Store<myReducer.MyState>,
@@ -20,5 +21,6 @@ export class MyResultComponent implements OnInit {
 
   ngOnInit() {
     this.clickCount$ = this.store.pipe(select(this.mySelector.clickCount));
+    this.queryResult$ = this.store.pipe(select(this.mySelector.queryResultString));
   }
 }
