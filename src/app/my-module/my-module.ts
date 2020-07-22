@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { StoreModule } from "@ngrx/store";
 import { MyButtonComponent } from './components/my-button.component';
 import { MyResultComponent } from './components/my-result.component';
+import { MySelector } from './my-selector';
 import * as myReducer from './my-reducers';
 
 @NgModule({
@@ -17,6 +18,9 @@ import * as myReducer from './my-reducers';
   exports: [
     MyButtonComponent,
     MyResultComponent,
+  ],
+  providers: [
+    MySelector
   ]
 })
 export class MyModule {}
